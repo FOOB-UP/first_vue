@@ -1,5 +1,5 @@
 import * as VueRouter from 'vue-router'
-import Left from '../components/Left.vue'
+import Left from '../components/Login.vue'
 import List from '../components/List.vue'
 import Rigit from '../components/Rigit.vue'
 import LW from '../components/LW.vue'
@@ -7,16 +7,15 @@ import LR from '../components/LR.vue'
 
 
 const routes =[
-  { path:'/', component:Left},
+  { path:'/', component: ()=>import("../components/Login.vue")},
   { 
-      path:'/Left', 
-      component:Left ,
-       children:[
-        {path:'/LW:id', component:LW},
-        {path:'/LR:id', component:LR}] 
+      path:'/Login', 
+      component:()=>import("../components/Login.vue") ,
   },
-  { path:'/List', component:List},
-  { path:'/Rigit', component:Rigit},
+  { 
+    path:'/user', 
+    component:()=>import("../components/LR.vue") ,
+}
 ]
 
 const router = VueRouter.createRouter({
