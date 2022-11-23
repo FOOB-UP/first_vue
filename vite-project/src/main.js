@@ -5,7 +5,7 @@ import App from './App.vue'
 import axios from 'axios'
 import router from "./router/index"
 import store from "./store/store"
-import './mock/mock'
+import '../mock/mock'
 
 
 // axios.defaults.baseURL="http://localhost:8081"
