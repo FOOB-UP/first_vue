@@ -1,5 +1,15 @@
-<template>
-    <h3>
-        中间大集合
-    </h3>
+<template lang="">
+    <div>
+        
+    </div>
 </template>
+<script>
+export default {
+    setup() {
+        
+    },
+}
+</script>>
+<style lang="">
+    
+</style>
